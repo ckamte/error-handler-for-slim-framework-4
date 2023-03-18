@@ -1,6 +1,6 @@
 # error-handler-for-slim-framework-4
 
-using twig-view and monolog as container
+Using twig-view (as view) and monolog (as logger) containers.
 
 # usage
 
@@ -23,5 +23,4 @@ $errorMiddleware->setDefaultErrorHandler($errorHandler);
 // Run Application
 $app->run();
 
-// ...
 ```
