@@ -12,11 +12,14 @@ use Slim\Factory\AppFactory;
 
 ...
 
+// Add Routing Middleware
+$app->addRoutingMiddleware();
+
 // Register Error Middleware
 $displayErrorDetails = true; //from your settings
 $errorMiddleware = $app->addErrorMiddleware($displayErrorDetails, true, true);
 
-// Create Error Handler
+// Register Error Handler
 $errorHandler = new ViewErrorHandler($app);
 $errorMiddleware->setDefaultErrorHandler($errorHandler);
 
