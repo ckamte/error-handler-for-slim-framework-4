@@ -1,4 +1,4 @@
-# error-handler-for-slim-framework-4
+# Custom Error Handler for Slim Framework 4
 
 Using twig-view (as view) and monolog (as logger) containers.
 
